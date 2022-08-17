@@ -1,0 +1,19 @@
+<h1>HEllo World</h1>
+
+<p>This is home page template</p>
+
+
+<p>{{ user_name | reverse }}</p>
+
+<p>{{ stuff | striptags }}</p>
+
+<p>{{ pizza.3 }}</p>
+
+{% for item in pizza %}
+    {% if item == 33 %}
+        {{ item + 100 }} <br>
+    {% else %}
+        {{ item }} <br>
+    {% endif %}
+    
+{% endfor %}
